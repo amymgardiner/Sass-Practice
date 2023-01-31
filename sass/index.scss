@@ -4,10 +4,13 @@
 // can add "--watch" to scripts to watch for changes to .scss and then compile for .css automatically, if npm start is also entered into the terminal"
 
 
+// importing partial
+@import "default";
+
+
 // Variable is a way to store information, that you want to reuse, throughout your stylesheet
 // can store things like colors, font size, etc.
 // Sass uses the dollar sign to create a variable
-
 $primary-color: lightblue;
 $primary-font: sans-serif, 'cursive';
 
@@ -18,13 +21,6 @@ body{
 
 
 // Example of nesting
-
-// don't do it this way
-// .container nav ul > li:nth-child(1){
-//     font-size: 1em;
-// }
-
-// this way is better
 .container{
     width:100%;
     height:100%;

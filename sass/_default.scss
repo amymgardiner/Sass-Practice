@@ -2,3 +2,11 @@
 
 // _partial.scss would be the name with an underscore in front
 // you can modularize your css and it is only a partial file but shouldn't be compiled into css
+
+html,
+body,
+ul,
+li{
+    margin: 0;
+    padding: 0;
+}
