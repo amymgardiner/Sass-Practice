@@ -1,10 +1,10 @@
-// to use Sass file in HTML, you need to compile it to CSS
+// To use Sass file in HTML, you need to compile it to CSS
 // to compile into CSS, go to the package.json file and add a new start script
 // any changes to a Sass file, will not change the .css file unless it is compiled again
-// can add "--watch to scripts to watch for changes to .scss and then compile for .css automatically, if npm start is also entered into the terminal"
+// can add "--watch" to scripts to watch for changes to .scss and then compile for .css automatically, if npm start is also entered into the terminal"
 
 
-// variable is a way to store information, that you want to reuse, throughout your stylesheet
+// Variable is a way to store information, that you want to reuse, throughout your stylesheet
 // can store things like colors, font size, etc.
 // Sass uses the dollar sign to create a variable
 
@@ -16,7 +16,8 @@ body{
     font-family: $primary-font;
 }
 
-// example of nesting
+
+// Example of nesting
 
 // don't do it this way
 // .container nav ul > li:nth-child(1){
@@ -25,6 +26,8 @@ body{
 
 // this way is better
 .container{
+    width:100%;
+    height:100%;
     nav{
         ul{
             li{
@@ -36,3 +39,5 @@ body{
         }
     }
 }
+
+
