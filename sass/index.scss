@@ -1,0 +1,14 @@
+// variable is a way to store information, that you want to reuse, throughout your stylesheet
+// can store things like colors, font size, etc.
+// Sass uses the dollar sign to create a variable
+
+// to use Sass file in HTML, you need to compile it to CSS
+// to compile into CSS, go to the package.json file and add a new start script
+
+$primary-color: #e5e5e5;
+$primary-font: sans-serif, 'cursive';
+
+body{
+    background: $primary-color;
+    font-family: $primary-font;
+}
