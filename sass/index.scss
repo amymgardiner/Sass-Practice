@@ -36,14 +36,37 @@ body{
     }
 }
 
+// .container nav ul > li:nith-child(1){
+//     font-size:1em;
+// }
+
 
 // Mixins are like a function with JavaScript but with different syntax
+// A mixin lets you make a CSS declaration that you want to re-use throughout your site
 
-.transform{
-    width:150px;
-    height:80px;
+@mixin transform_Me($prop1, $prop2) {
+    width:$prop1;
+    height:$prop2;
     background-color: yellow;
     -ms-transform: rotate(20deg) scale(1.5);  /*IE 9*/
     -webkit-transform: rotate(20deg) scale(1.5);  /*Safari 3-8*/
     transform: rotate(20deg) scale(1.5);
 }
+
+.transform{
+    @include transform_Me(400px, 500px);
+    font-size: 3em;
+}
+
+.transform-2{
+    @include transform_Me(200px, 300px);
+}
+
+// .transform{
+//     width:150px;
+//     height:80px;
+//     background-color: yellow;
+//     -ms-transform: rotate(20deg) scale(1.5);  /*IE 9*/
+//     -webkit-transform: rotate(20deg) scale(1.5);  /*Safari 3-8*/
+//     transform: rotate(20deg) scale(1.5);
+// }
