@@ -98,3 +98,30 @@ body{
         }
     }
 }
+
+
+// operators are the key features of programming
+// operators are helpful for scaling the web component
+// doing math in CSS is very helpful and Sass has some standard math operators
+.header{
+    // addition (has to be same units or no unit at all on the right side value)
+    font-size: 4px + 2;
+
+    // subtraction (has to be same units or no unit at all on the right side value)
+    height: 80% - 5%;
+}
+
+// multiplication (only one value should have unit)
+.multi{
+    width: 20% * 5;
+
+    // division (values shoud be in brackets)
+    height: (24px / 4);
+}
+
+P{
+    &:before{
+        content: "I am a string with" + quote;
+        font-family: cursive + "serif";
+    }
+}
