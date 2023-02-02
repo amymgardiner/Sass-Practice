@@ -70,3 +70,29 @@ body{
 //     -webkit-transform: rotate(20deg) scale(1.5);  /*Safari 3-8*/
 //     transform: rotate(20deg) scale(1.5);
 // }
+
+
+// example of extend (aka inheritence)
+// using extend lets you share a set of CSS properties from one selector to another
+
+%extend-border{
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+    font-size: 1em;
+}
+
+// Sass won't make any code that you can see in the style.css unless you use this in a class
+%extend-new{
+    margin:20px;
+    color: #eee;
+}
+
+.border{
+    @extend %extend-border;
+}
+
+.border1{
+    @extend %extend-border;
+    margin: 20px;
+}
